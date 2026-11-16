@@ -17,5 +17,9 @@ class AppServiceProvider extends ServiceProvider
         Gate::define('kelola-buku', function ($user) {
             return $user->hasAnyRole(['admin', 'petugas']);
         });
+
+        if ($this->app->environment('production')) {
+            \URL::forceScheme('https');
+        }
     }
 }
