@@ -1,6 +1,6 @@
 <x-guest-layout>
     <h2 class="text-center text-lg font-semibold text-gray-800 mb-4">
-        Login Perpustakaan Perdi - 250441100052
+
     </h2>
 
     <!-- Session Status -->
